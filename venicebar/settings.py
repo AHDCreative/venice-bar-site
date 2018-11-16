@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'simple_open_graph',
     'rosetta',
-    'venicebar',
+    'venicebar'
 ]
 
 MIDDLEWARE = [
