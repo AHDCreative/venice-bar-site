@@ -36,3 +36,4 @@ requests==2.20.0
 sentry-sdk==0.4.3
 slacker==0.9.65
 vcrpy==2.0.1
+django-rosetta

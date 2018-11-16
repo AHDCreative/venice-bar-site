@@ -50,6 +50,7 @@ INSTALLED_APPS = (
     'django_countries',
     'gulp_rev',
     'venicebar',
+    'rosetta',
     )
 
 MIDDLEWARE = [
