@@ -53,6 +53,7 @@ INSTALLED_APPS = (
     'gulp_rev',
     'venicebar',
     'rosetta',
+    'gunicorn',
     )
 
 MIDDLEWARE = [
