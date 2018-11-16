@@ -4,6 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+Django = "*"
+django-simple-open-graph ="*"
+django-rosetta = "*"
 
 [dev-packages]
 

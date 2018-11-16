@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-import django_heroku
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +24,7 @@ SECRET_KEY = '9krnk=y4^s=$%i*zn5vn67_p2l3h1=%eh63cpx#-81+6dg9q@@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'simple_open_graph',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
@@ -120,10 +120,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DiR = [os.path.join(BASE_DIR, 'static')]
-
-# Configure Django App for Heroku.
-django_heroku.settings(locals())
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.core.conte',
-)
