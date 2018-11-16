@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.flatpages',
 
-    'django_date_extenion',
+    'django_date_extensions',
     'django_extensions',
     'storages',
     'markdown_deux',
