@@ -1,1 +1,1 @@
-web gunicorn venicebar.wsgi
+web: gunicorn venicebar.wsgi
