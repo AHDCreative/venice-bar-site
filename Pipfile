@@ -45,7 +45,8 @@ vcrpy = "==2.0.1"
 django_date_extensions = "==2.0"
 Pillow = "==5.3.0"
 django-heroku = "*"
-
+gunicorn = "*"
+"psycopg2-binary" = "*"
 [dev-packages]
 
 [requires]
