@@ -1,0 +1,99 @@
+
+{% extends 'base.html' %}
+{% load i18n %}
+{% load simple_open_graph %}
+{% load static %}
+<!-- Opengraph -->
+{% block extrahead %}
+{% opengraph_meta "url=object.get_absolute_url, title=object.title, type='website', image=uimage.url" %}
+{% endblock extrahead %}
+{% block content %}
+<div class="wrapper">
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- as general rule, including heading (h1 -> h6) as child of each section and article element for screen reader purposa -->
+        <h2 class="indent">Hero</h2>
+        <!-- Main Slider -->
+        <div class="main-slider slider flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="background-img overlay zoom">
+                        <img src="{% static 'img/1.jpg' %}" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="background-img overlay zoom">
+                        <img src="{% static 'img/2.jpg' %}" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- End Slider -->
+        <!-- Header -->
+        <header class="header default">
+            {% include 'header.html' %}
+        </header>
+        <!-- End Header -->
+        <div class="container hero-content">
+            <!-- Row -->
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1 class="large uppercase mb-0">{% trans 'Coffee Drinks &amp: Venetian Food;' %}</h1>
+                    <h5 class="uppercase mb-0 alt-font">{% trans 'Your #1 Source for Venetian Food and a very Good Cofee' %}</h5>
+                </div>
+            </div>
+            <!-- End Row-->
+        </div>
+        <div class="poly-slider"></div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- About section -->
+    <section id="about" class="main md-top bg-light">
+        {% include 'about.html' %}
+    </section>
+    <!-- End About Section -->
+    <!-- Divider Section -->
+    <section id="menu" class="overlay divider bg-light">
+        {% include 'menu.html' %}
+    </section>
+    <!-- End Divider Section -->
+    <!-- Menu Section -->
+    <section class="menu main pattern bg-light">
+        {% include 'cafe_menu.html' %}
+    </section>
+    <!-- End Menu Section -->
+    <!-- Reviews section -->
+    <section class="overlay review gap-double-md">
+        {% include 'review.html' %}
+    </section>
+    <!-- End Review Section -->
+    <!-- Offer Section -->
+    <section id="offer" class="main bg-light">
+        {% include 'offer.html' %}
+    </section>
+    <!-- End Offer Section -->
+    <!-- Locations Section -->
+    <section id="location" class="location overlay divider">
+        {% include 'locations.html' %}
+    </section>
+    <!-- End locations section -->
+    <!-- Reservation Section -->
+    <section id="reservation" class="main pattern">
+        {% include 'reservation.html' %}
+    </section>
+    <!-- End Reservation Section -->
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery pt-2  bg-light">
+        {% include 'gallery.html' %}
+    </section>
+    <!-- End Gallery Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact gap-after large-space bg-dark">
+        {% include 'contact.html' %}
+    </section>
+    <!-- End Contact Section -->
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+    <!-- End Footer -->
+</div>
+{% endblock content %}
